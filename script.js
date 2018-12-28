@@ -83,6 +83,8 @@ fetch('pos.txt')
 			output = generate();
 		}
 
+		output = output.slice(0, 1).toUpperCase() + output.slice(1) + ".";
+
 		$code.innerHTML = output;
 	});
 });
